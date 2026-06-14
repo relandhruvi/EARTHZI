@@ -6,3 +6,4 @@ pillow
 numpy
 open-clip-torch
 python-multipart
+gdown
