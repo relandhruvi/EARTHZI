@@ -50,7 +50,7 @@ Synthetic Aperture Radar penetrates cloud and night, but reads like noise to the
 The homepage opens with a full-viewport Three.js particle field — 1,400 points drifting along an amber-to-cyan gradient, responding to scroll and mouse movement. The EARTHZI wordmark sits front and center with a gradient glow, alongside two CTAs: Run a Retrieval and See How It Works. This is cross-modal Earth observation, reimagined as a product.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/Screenshot%202026-06-14%20215547.png" alt="EARTHZI Hero Section" width="800"/>
+  
 </div>
 
 ---
@@ -87,6 +87,7 @@ The query image appears on the left. Five ranked result cards appear below — e
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20%20(3).jpeg" alt="Top 5 Retrieval Results" width="800"/>
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/Screenshot%202026-06-14%20215547.png" alt="EARTHZI Hero Section" width="800"/>
 </div>
 
 ---
