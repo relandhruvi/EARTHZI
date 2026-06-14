@@ -49,35 +49,54 @@ Synthetic Aperture Radar penetrates cloud and night, but reads like noise to the
 ### Hero — One satellite sees radar. One sees light.
 The homepage opens with a full-viewport Three.js particle field — 1,400 points drifting along an amber-to-cyan gradient, responding to scroll and mouse movement. The EARTHZI wordmark sits front and center with a gradient glow, alongside two CTAs: Run a Retrieval and See How It Works. This is cross-modal Earth observation, reimagined as a product.
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/Screenshot%202026-06-14%20215547.png" alt="EARTHZI Hero Section" width="800"/>
+</div>
+
 ---
 
 ### The Problem — Two Sensors, One Earth
 SAR penetrates cloud and night but looks like noise. Optical is intuitive but fails in darkness and bad weather. EARTHZI learns to recognise the same ground beneath both — pulling true geographic pairs together in embedding space and pushing everything else apart. The mission section surfaces the real evaluation numbers: 35.7% Rank@1 and 68.7% Recall@5 for Optical→SAR, and 32.5% Rank@1 and 63.9% Recall@5 for SAR→Optical, evaluated across 4,000 queries on a held-out test split.
 
----
-
-### Capabilities — What EARTHZI Can Do
-Four animated cards reveal on scroll — SAR→Optical Retrieval, Optical→SAR Retrieval, Fine-tuned RemoteCLIP, and Top-5 Similarity Ranking — each with an icon and a one-line description. Cards stagger in using GSAP ScrollTrigger for a polished reveal effect.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.19.jpeg" alt="Two Sensors One Earth" width="800"/>
+</div>
 
 ---
 
 ### Pipeline — From Query to Match
 A horizontally-pinned scroll section walks through the three-stage retrieval pipeline: Upload a patch → RemoteCLIP encodes it into a 512-dimensional shared embedding → Cosine similarity search returns the five closest cross-modal matches from the gallery. Each stage is labeled with its role (INPUT / ENCODE / COMPARE) and a short technical description.
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20%20(1).jpeg" alt="Pipeline From Query to Match" width="800"/>
+</div>
+
 ---
 
 ### Live Demo — Run a Retrieval
 The interactive core of EARTHZI. A drag-and-drop upload zone accepts any SAR or optical image patch. A direction toggle switches between SAR→OPTICAL and OPTICAL→SAR retrieval. Clicking Run Retrieval sends the image to the FastAPI backend on Hugging Face Spaces, which encodes it and returns the top-5 gallery matches. Results appear as animated cards — each showing the matched image thumbnail, rank, and cosine similarity score. The upload zone resets automatically after each query so it's always ready for the next image.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20%20(2).jpeg" alt="Live Demo Upload Zone" width="800"/>
+</div>
 
 ---
 
 ### Results — Top-5 Cross-Modal Matches
 The query image appears on the left. Five ranked result cards appear below — each showing the retrieved image thumbnail from the opposite modality, its rank, and its similarity score with an animated fill bar. Hovering any result thumbnail zooms it in-place for closer inspection. The system retrieves the correct geographic match at Rank 1 roughly one-third of the time, and within the top five nearly seven times out of ten.
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20%20(3).jpeg" alt="Top 5 Retrieval Results" width="800"/>
+</div>
+
 ---
 
 ### Keep It Free, Keep It Growing
 A dedicated section above the footer makes the mission explicit: EARTHZI is free, open, and built for the research community. Two CTAs — Keep It Free and Get Started — sit beneath a short statement about democratising satellite imagery analysis for science and society.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20.jpeg" alt="Keep It Free Section" width="800"/>
+</div>
 
 ---
 
@@ -195,6 +214,7 @@ EARTHZI/
 │   ├── app.py              # FastAPI server — /search and /gallery endpoints
 │   ├── requirements.txt    # Python dependencies
 │   └── Dockerfile          # HuggingFace Spaces Docker deployment
+├── screenshots/            # Platform walkthrough screenshots
 ├── index.html              # Frontend — Three.js + GSAP single-page app
 ├── favicon.ico             # EARTHZI logo
 └── README.md
