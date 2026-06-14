@@ -1,0 +1,80 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+venv/
+.venv/
+env/
+
+# VS Code
+
+.vscode/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Environment Variables
+
+.env
+.env.*
+
+# Logs
+
+*.log
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# PyTorch Models
+
+*.pt
+*.pth
+*.ckpt
+
+# Large Dataset Files
+
+data/
+dataset/
+datasets/
+images/
+s1/
+s2/
+gallery/
+
+# Generated Embeddings
+
+gallery_embeddings.pt
+gallery_names.pt
+
+# Cache
+
+.cache/
+.pytest_cache/
+
+# Build
+
+build/
+dist/
+*.egg-info/
+
+# Temporary Files
+
+tmp/
+temp/
+
+# Node (if frontend is in same repo)
+
+node_modules/
+.next/
+out/
+
+# Vercel
+
+.vercel/
