@@ -1,3 +1,25 @@
+import gdown
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def download_if_missing():
+    files = {
+        "gallery_names.pt":      "14fp3fjoz4e6a7hYgNh3HcvY6l3IGl9E5",
+        "gallery_embeddings.pt": "1AbH51Sqzc9DWtQZfp2x2XFerYeosEc2_",
+        "finetuned_remoteclip.pth": "1KxRJgFSs-WAJDwGRnc4a474LyPP50weT",
+    }
+    for filename, file_id in files.items():
+        path = os.path.join(BASE_DIR, filename)
+        if not os.path.exists(path):
+            print(f"Downloading {filename}...")
+            gdown.download(f"https://drive.google.com/uc?id={file_id}", path, quiet=False)
+            print(f"Done: {filename}")
+        else:
+            print(f"Already exists: {filename}")
+
+download_if_missing()
+
 import os
 os.environ["OMP_NUM_THREADS"] = "1"
 os.environ["MKL_NUM_THREADS"] = "1"
