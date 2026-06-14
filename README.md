@@ -50,7 +50,7 @@ Synthetic Aperture Radar penetrates cloud and night, but reads like noise to the
 The homepage opens with a full-viewport Three.js particle field — 1,400 points drifting along an amber-to-cyan gradient, responding to scroll and mouse movement. The EARTHZI wordmark sits front and center with a gradient glow, alongside two CTAs: Run a Retrieval and See How It Works. This is cross-modal Earth observation, reimagined as a product.
 
 <div align="center">
-  
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.19.jpeg" alt="Two Sensors One Earth" width="800"/>
 </div>
 
 ---
@@ -59,7 +59,7 @@ The homepage opens with a full-viewport Three.js particle field — 1,400 points
 SAR penetrates cloud and night but looks like noise. Optical is intuitive but fails in darkness and bad weather. EARTHZI learns to recognise the same ground beneath both — pulling true geographic pairs together in embedding space and pushing everything else apart. The mission section surfaces the real evaluation numbers: 35.7% Rank@1 and 68.7% Recall@5 for Optical→SAR, and 32.5% Rank@1 and 63.9% Recall@5 for SAR→Optical, evaluated across 4,000 queries on a held-out test split.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.19.jpeg" alt="Two Sensors One Earth" width="800"/>
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20.jpeg" alt="Keep It Free Section" width="800"/>
 </div>
 
 ---
@@ -86,7 +86,6 @@ The interactive core of EARTHZI. A drag-and-drop upload zone accepts any SAR or 
 The query image appears on the left. Five ranked result cards appear below — each showing the retrieved image thumbnail from the opposite modality, its rank, and its similarity score with an animated fill bar. Hovering any result thumbnail zooms it in-place for closer inspection. The system retrieves the correct geographic match at Rank 1 roughly one-third of the time, and within the top five nearly seven times out of ten.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20%20(3).jpeg" alt="Top 5 Retrieval Results" width="800"/>
   <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/Screenshot%202026-06-14%20215547.png" alt="EARTHZI Hero Section" width="800"/>
 </div>
 
@@ -96,7 +95,7 @@ The query image appears on the left. Five ranked result cards appear below — e
 A dedicated section above the footer makes the mission explicit: EARTHZI is free, open, and built for the research community. Two CTAs — Keep It Free and Get Started — sit beneath a short statement about democratising satellite imagery analysis for science and society.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20.jpeg" alt="Keep It Free Section" width="800"/>
+  <img src="https://raw.githubusercontent.com/relandhruvi/EARTHZI/main/screenshots/WhatsApp%20Image%202026-06-14%20at%2021.29.20%20(3).jpeg" alt="Top 5 Retrieval Results" width="800"/>
 </div>
 
 ---
