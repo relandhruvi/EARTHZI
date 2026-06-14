@@ -23,6 +23,8 @@ Backend API — https://relandhruvi-earthzi.hf.space
 
 Demo Link — https://drive.google.com/file/d/1bvxGsuUVQZv9_GQ-A6SzhizcgG6A31-7/view?usp=sharing
 
+Presentation (.pptx) — https://drive.google.com/file/d/1zW7f2-1jtAjvrPsGIUeE1p2jkCI1lVu9/view?usp=sharing
+
 ---
 
 ## 📌 System Overview
