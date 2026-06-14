@@ -21,6 +21,8 @@ TRY IT OUT — https://relandhruvi.github.io/EARTHZI
 
 Backend API — https://relandhruvi-earthzi.hf.space
 
+Demo Link — https://drive.google.com/file/d/1bvxGsuUVQZv9_GQ-A6SzhizcgG6A31-7/view?usp=sharing
+
 ---
 
 ## 📌 System Overview
